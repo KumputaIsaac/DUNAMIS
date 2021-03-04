@@ -212,9 +212,13 @@ section{
 .feature .title{
     text-align: left;
 }
+.feature-left {
+    text-align: center;
+}
 .feature-left img{
     width: 80%;
     margin: 0 auto;
+    border-radius: 50%;
 }
 .feature-right{
     margin-top: 4rem;
@@ -751,6 +755,14 @@ section{
         overflow: hidden;
         border-radius: .25em;
     }
+    
+  }
+  @media (max-width: 550px){
+    .show-faq-content {
+        height: auto;
+        padding: 0.6rem 1.8rem;
+    }
+    
   }
 
 
