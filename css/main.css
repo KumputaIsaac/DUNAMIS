@@ -66,6 +66,7 @@ section{
 .title h2{
     font-size: 2.2rem;
     color: var(--night-rider);
+    font-weight: bold;
 }
 .title .text{
     font-weight: 500;
@@ -408,9 +409,9 @@ section{
 .testimonial .title{
     color: #fff;
 }
-.testimonial .row{
+/* .testimonial .row{
     margin-top: 2rem;
-}
+} */
 .testimonial-img{
     border: 4px solid #fff;
     width: 120px;
@@ -532,9 +533,11 @@ section{
 
 @media screen and (min-width: 768px){
     .detail .row{
-        display: grid;
+        /* display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 2rem; */
+        display: flex;
+        justify-content: space-between;
     }
     .detail-item{
         margin: 0;
@@ -575,6 +578,9 @@ section{
     }
     .contact-right > div:first-child{
         margin-top: 0;
+    }
+    .detail-item {
+        margin: 10px;
     }
 }
 
@@ -780,6 +786,9 @@ section{
     .dropdown h1{
         font-size: 1rem;
     }
+    section {
+        padding: 1rem 0;
+    }
     
   }
 
@@ -801,6 +810,7 @@ section{
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     margin-top: 20px;
+    border-radius: 10px;
   }
 
   .button2:hover {
